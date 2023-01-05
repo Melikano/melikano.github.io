@@ -3,7 +3,16 @@
 @tailwind utilities;
 
 @layer base {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 600;
+	}
 	body {
 		font-family: "Atma", cursive;
+        font-weight: 300;
 	}
 }
