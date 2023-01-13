@@ -8,7 +8,7 @@ export default function AboutMe() {
 			className={"absolute top-1/2 transform -translate-y-1/2 w-4/5"}
 		>
 			<div className="flex">
-				<div className="w-1/2 h- mr-8 rounded relative">
+				<div className="w-1/2 mr-8 rounded relative">
 					<Image
 						src={profilePic}
 						alt="melika norouzbeygi's pic"
