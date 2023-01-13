@@ -4,8 +4,6 @@ export default function Document() {
 	return (
 		<Html lang="en">
 			<Head>
-				<title>Melika Norouzbeygi</title>
-				<meta name="description" content="Melika Norouzbeygi's personal website" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +13,7 @@ export default function Document() {
 					crossOrigin="true"
 				/>
 				<link
-					href="https://fonts.googleapis.com/css2?family=Atma:wght@300;600&display=swap"
+					href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap"
 					rel="stylesheet"
 				/>
 			</Head>
