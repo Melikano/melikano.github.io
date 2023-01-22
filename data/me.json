@@ -1,0 +1,59 @@
+{
+	"summary": "Experienced Software Developer with extensive working experience in the human resources and advertising industries. Skilled in Typescript, React and Next.js. Currently pursuing a Masters in Computer Science at the University of Calgary focusing on functional programming. Experienced Software Developer with extensive working experience in the human resources and advertising industries.",
+
+	"work_experience": [
+		{
+			"position": "Senior Frontend Developer",
+			"company_name": "Rahnema College",
+			"company_website": "www.rahnemacollege.com",
+			"description": "– Developing company’s website from scratch using Typescript, Next.js, React, and TailwindCss. -Builiding an UI-Library to be used on website, blog, and learning management system (LMS) using Typescript, React, and styled-components. - Conducting code reviews. – Mentoring junior developers"
+		},
+		{
+			"position": "Frontend Developer",
+			"company_name": "Rahnema College",
+			"company_website": "www.rahnemacollege.com",
+			"description": "Developing features for website, administration panel, and learning management system (LMS)."
+		},
+		{
+			"position": "Frontend Developer",
+			"company_name": "Yektanet",
+			"company_website": "www.yektanet.en",
+			"description": "Developing publisher and advertiser panels using javascript, Vue.js and Nuxt.js."
+		},
+		{
+			"position": "Frontend Developer",
+			"company_name": "Sanjagh",
+			"company_website": "www.sanjagh.pro",
+			"description": "Developing company’s website and mobile applications using Javascript, React and React-Native."
+		},
+		{
+			"position": "Software Developer Intern",
+			"company_name": "Rahnema College",
+			"company_website": "www.rahnemacollege.com",
+			"description": "Focusing on Full-Stack Mobile Application Development, Software Architecture and DevOps"
+		}
+	],
+	"education": [
+		{
+			"start_date": "2022",
+			"end_date": "Present",
+			"title": "Master of Science in Computer Science",
+			"school": "University of Calgary"
+		},
+		{
+			"start_date": "2015",
+			"end_date": "2019",
+			"title": "Bachelor of Science in Computer Engineering",
+			"school": "Amirkabir University of Technology"
+		}
+	],
+	"skills": [
+		{ "title": "TypeScript", "strength": "70" },
+		{ "title": "JavaScript", "strength": "80" },
+		{ "title": "React", "strength": "90" },
+		{ "title": "Next.js", "strength": "90" },
+		{ "title": "React-Native", "strength": "75" },
+		{ "title": "Vue.js", "strength": "70" },
+		{ "title": "Nuxt.js", "strength": "70" }
+	]
+}
