@@ -1,16 +1,26 @@
-import { FC, ReactElement, useEffect, useState } from "react";
+import { CSSProperties, FC, ReactElement, useEffect, useState } from "react";
 
-type AnimatedDivProps = { children: ReactElement; className: string };
+type AnimatedDivProps = {
+	children: ReactElement;
+	className?: string;
+	style?: CSSProperties;
+};
 
-const AnimatedDiv: FC<AnimatedDivProps> = ({ children, className }) => {
+const AnimatedDiv: FC<AnimatedDivProps> = ({ children, className, style }) => {
 	const [opacity, setOpacity] = useState("opacity-0");
 
 	useEffect(() => {
 		setOpacity("opacity-1");
+		return () => {
+			setOpacity("opacity-0");
+		};
 	}, []);
 
 	return (
-		<div className={`${className} ${opacity} transition-opacity duration-300 delay-300`}>
+		<div
+			className={`${className} ${opacity} transition-opacity duration-500 delay-300`}
+			style={style}
+		>
 			{children}
 		</div>
 	);
