@@ -4,19 +4,17 @@ import { useRouter } from "next/router";
 import { MenuSection } from "../../types";
 import Menu from "../Menu";
 import { menuSections } from "../../constants";
+import useGetCurrentBreakpoint from "../../helpers/useGetCurrentBreakpoint";
+import AnimatedDiv from "../AnimatedDiv";
 
 type LayoutProps = { children: ReactElement };
 
 const Layout: FC<LayoutProps> = ({ children }) => {
 	const { asPath } = useRouter();
-	const [opacity, setOpacity] = useState("opacity-0");
-	const currentSection =
-		menuSections.find(({ path }) => path === asPath) || menuSections[0];
-
-	useEffect(() => {
-		setOpacity("opacity-1");
-		console.log("here");
-	}, [asPath]);
+	const { isDesktop } = useGetCurrentBreakpoint();
+	const currentSectionIndex = (
+		menuSections.find(({ path }) => path === asPath) || menuSections[0]
+	).index;
 
 	return (
 		<>
@@ -28,8 +26,19 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 				/>
 			</Head>
 			<main className="relative">
-				<Menu sections={menuSections} currentSection={currentSection.index} />
-				{children}
+				<Menu sections={menuSections} currentSection={currentSectionIndex} />
+				<div
+					className="absolute"
+					style={{
+						width: isDesktop ? "calc(100% - 15rem)" : "100%",
+						maxHeight: "calc(100vh - 15rem)",
+						overflow: isDesktop ? "hidden" : "scroll",
+						top: isDesktop ? "3rem" : `${3 + currentSectionIndex * 3}rem`,
+						left: isDesktop ? `${3 + currentSectionIndex * 3}rem` : "0",
+					}}
+				>
+					{children}
+				</div>
 			</main>
 		</>
 	);
