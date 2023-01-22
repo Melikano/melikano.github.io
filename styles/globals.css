@@ -3,6 +3,31 @@
 @tailwind utilities;
 
 @layer base {
+	html {
+		font-size: 12px;
+		scroll-behavior: smooth;
+	}
+	@media (min-width: 768px) {
+		html {
+			font-size: 10px;
+		}
+	}
+
+	@media (min-width: 976px) {
+		html {
+			font-size: 13px;
+		}
+	}
+	@media (min-width: 1440px) {
+		html {
+			font-size: 16px;
+		}
+	}
+	@media (min-width: 1680px) {
+		html {
+			font-size: 16px;
+		}
+	}
 	h1,
 	h2,
 	h3,
@@ -11,8 +36,11 @@
 	h6 {
 		font-weight: 600;
 	}
+	h1 {
+		@apply text-3xl;
+	}
 	body {
 		font-family: "Josefin Sans", cursive;
-        font-weight: 300;
+		font-weight: 300;
 	}
 }
