@@ -6,7 +6,7 @@ export default function Skills() {
 	return (
 		<AnimatedDiv className={"mx-auto w-11/12"}>
 			<>
-				<h1 className="text-black bg-white inline p-2">Skills:</h1>
+				<h1 className="text-white inline p-2">Skills:</h1>
 				<div className="grid md:grid-cols-3 grid-rows-2 gap-4 mt-8">
 					{mydata.skills.map(({ title, strength }, i) => (
 						<div className="mb-4" key={i}>

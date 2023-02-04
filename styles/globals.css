@@ -37,7 +37,7 @@
 		font-weight: 600;
 	}
 	h1 {
-		@apply text-3xl;
+		@apply text-6xl;
 	}
 	body {
 		font-family: "Josefin Sans", cursive;

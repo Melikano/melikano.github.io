@@ -16,9 +16,11 @@ const Menu: FC<MenuProps> = ({ sections, currentSection }) => {
 			{sections.map(({ index, title, backgroundColor, color, path }) => (
 				<nav
 					key={path}
-					className={`transition-all delay-200 duration-500 ${
+					className={`transition-all delay-200 duration-700 ${
 						index === current || !isDesktop ? "w-full" : "w-20"
-					} ${index === current || isDesktop ? "h-4/5" : "h-14"}`}
+					} ${index === current || isDesktop ? "h-4/5" : "h-14"}
+					${index === current ? "cursor-default" : ""}
+					`}
 					style={{
 						backgroundColor,
 						color,
@@ -33,7 +35,13 @@ const Menu: FC<MenuProps> = ({ sections, currentSection }) => {
 						setCurrent(index);
 					}}
 				>
-					<Link href={path} shallow className="block h-screen md:pt-8 pt-3">
+					<Link
+						href={path}
+						shallow
+						className={`block h-screen md:pt-8 pt-3 ${
+							index === current ? "cursor-default" : ""
+						}`}
+					>
 						{index !== current ? (
 							<p className="md:rotate-90 text-3xl whitespace-nowrap font-bold">
 								{title}

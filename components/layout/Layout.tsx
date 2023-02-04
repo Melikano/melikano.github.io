@@ -30,7 +30,8 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 				<div
 					className="absolute"
 					style={{
-						width: isDesktop ? "calc(100% - 15rem)" : "100%",
+						// TODO kosher
+						width: isDesktop ? "calc(100% - 25rem)" : "100%",
 						maxHeight: "calc(100vh - 15rem)",
 						overflow: isDesktop ? "hidden" : "scroll",
 						top: isDesktop ? "3rem" : `${3 + currentSectionIndex * 3}rem`,

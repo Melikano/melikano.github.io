@@ -18,7 +18,7 @@ const AnimatedDiv: FC<AnimatedDivProps> = ({ children, className, style }) => {
 
 	return (
 		<div
-			className={`${className} ${opacity} transition-opacity duration-500 delay-300`}
+			className={`${className} ${opacity} transition-opacity duration-700 delay-700`}
 			style={style}
 		>
 			{children}
