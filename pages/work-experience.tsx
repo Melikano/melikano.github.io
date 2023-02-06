@@ -9,8 +9,8 @@ export default function WorkExperience() {
 				<div className="grid md:grid-cols-2 grid-rows-2 gap-4 mt-8">
 					{mydata.work_experience.map(
 						({ position, company_name, company_website, description }, i) => (
-							<div className="bg-navy p-8" key={i}>
-								<h2 className="text-xl bg-yellow  p-2 text-white inline">
+							<div className="bg-black p-8" key={i}>
+								<h2 className="text-xl bg-green  p-2 text-white inline">
 									{position} at <a href={company_website}>{company_name}</a>
 								</h2>
 								<p className="pt-2 text-lg md:text-justify mt-2 text-white">

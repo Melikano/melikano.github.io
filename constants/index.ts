@@ -25,15 +25,15 @@ export const menuSections: MenuSection[] = [
 	{
 		index: 3,
 		title: "Skills",
-		backgroundColor: "#181340",
-		color: "white",
-		path: "/skills",
-	},
-	{
-		index: 4,
-		title: "Projects",
 		backgroundColor: "#fdb44d",
 		color: "white",
 		path: "/skills",
 	},
+	// {
+	// 	index: 4,
+	// 	title: "Projects",
+	// 	backgroundColor: "#fdb44d",
+	// 	color: "white",
+	// 	path: "/skills",
+	// },
 ];

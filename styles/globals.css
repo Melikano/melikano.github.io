@@ -38,6 +38,13 @@
 	}
 	h1 {
 		@apply text-6xl;
+		
+	}
+	@media (max-width: 760px) {
+		h1 {
+			@apply text-4xl;
+			
+		}
 	}
 	body {
 		font-family: "Josefin Sans", cursive;
