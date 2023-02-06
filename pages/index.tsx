@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import AnimatedDiv from "../components/AnimatedDiv";
 import mydata from "../data/me.json";
 import { FiLinkedin, FiGithub, FiMail } from "react-icons/fi";
