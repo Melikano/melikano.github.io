@@ -7,19 +7,19 @@ const social = [
 	{
 		title: "github",
 		Icon: FiGithub,
-		color: "#e91363",
+		color: "var(--pink)",
 		href: "https://github.com/melikano",
 	},
 	{
 		title: "linkedin",
 		Icon: FiLinkedin,
-		color: "rgb(23 139 117)",
+		color: "var(--green)",
 		href: "https://www.linkedin.com/in/melika-norouzbeygi/",
 	},
 	{
 		title: "email",
 		Icon: FiMail,
-		color: "#fdb44d",
+		color: "var(--yellow)",
 		href: "mailto:melikanorouzbeygi75@gmail.com",
 	},
 ];
@@ -28,7 +28,7 @@ export default function AboutMe() {
 		<AnimatedDiv className="md:mx-auto md:w-5/6 md:p-0 px-6">
 			<>
 				<h2 className="text-white md:text-6xl text-5xl">I'm </h2>
-				<h1 className="text-white bg-red md:w-2/3 md:text-8xl text-6xl">Melika Norouzbeygi</h1>
+				<h1 className="text-white bg-pink md:w-2/3 md:text-8xl text-6xl">Melika Norouzbeygi</h1>
 				<div className="md:flex-row flex flex-col">
 					<div className="md:w-2/3 md:mt-8 md:flex-row flex flex-col-reverse py-8">
 						<ul className="md:mr-16 md:mt-0 mt-8 flex flex-row md:flex-col md:justify-between md:self-auto self-center">

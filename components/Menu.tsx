@@ -13,17 +13,16 @@ const Menu: FC<MenuProps> = ({ sections, currentSection }) => {
 
 	return (
 		<div className="md:flex-row fixed flex flex-col cursor-pointer w-full h-screen">
-			{sections.map(({ index, title, backgroundColor, color, path }) => (
+			{sections.map(({ index, title, backgroundColor, path }) => (
 				<nav
 					key={path}
-					className={`transition-all delay-200 duration-700 ${
+					className={`text-white transition-all delay-200 duration-700 ${
 						index === current || !isDesktop ? "w-full" : "w-20"
 					}
 					${index === current ? "cursor-default" : ""}
 					`}
 					style={{
 						backgroundColor,
-						color,
 						position: isDesktop || index === current ? "static" : "fixed",
 						bottom: index > currentSection ? 3.5 * (3 - index) + "rem" : "auto",
 						top: index < currentSection ? 3.5 * index + "rem" : "auto",
