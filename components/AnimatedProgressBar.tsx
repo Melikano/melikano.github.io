@@ -16,7 +16,7 @@ const AnimatedProgressBar: FC<AnimatedProgressBarProps> = ({ percent }) => {
 	return (
 		<div className="bg-white h-4" style={{ width: isDesktop ? 400 : "100%" }}>
 			<div
-				className="bg-black transition-all duration-1500 delay-100 h-4"
+				className="bg-black transition-all duration-1000 delay-1000 h-4"
 				style={{ width }}
 			></div>
 		</div>
