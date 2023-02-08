@@ -18,17 +18,19 @@ const Menu: FC<MenuProps> = ({ sections, currentSection }) => {
 					key={path}
 					className={`transition-all delay-200 duration-700 ${
 						index === current || !isDesktop ? "w-full" : "w-20"
-					} ${index === current || isDesktop ? "h-4/5" : "h-14"}
+					}
 					${index === current ? "cursor-default" : ""}
 					`}
 					style={{
 						backgroundColor,
 						color,
-						top: isDesktop ? "3rem" : `${3 + index * 3}rem`,
+						position: isDesktop || index === current ? "static" : "fixed",
+						bottom: index > currentSection ? 3.5 * (3 - index) + "rem" : "auto",
+						top: index < currentSection ? 3.5 * index + "rem" : "auto",
 						height: isDesktop
 							? "100vh"
 							: index === current
-							? "calc(100vh - 10.5em)"
+							? "100vh"
 							: "3.5rem",
 					}}
 					onClick={() => {
