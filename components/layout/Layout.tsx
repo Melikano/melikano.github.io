@@ -34,7 +34,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 						width: isDesktop
 							? `calc(100% - ${numberOfSections * 5}rem)`
 							: "100%",
-						maxHeight: `calc(100vh - ${numberOfSections * 3}rem)`,
+						maxHeight: `calc(100vh - ${numberOfSections * 4}rem)`,
 						overflow: isDesktop ? "hidden" : "scroll",
 						top: isDesktop ? "3rem" : `${3 + currentSectionIndex * 3}rem`,
 						left: isDesktop ? `${3 + currentSectionIndex * 3}rem` : "0",

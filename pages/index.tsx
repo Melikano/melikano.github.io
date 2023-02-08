@@ -25,7 +25,7 @@ const social = [
 ];
 export default function AboutMe() {
 	return (
-		<AnimatedDiv className="mx-auto w-5/6">
+		<AnimatedDiv className="md:mx-auto md:w-5/6 md:p-0 px-6">
 			<>
 				<h2 className="text-white md:text-6xl text-5xl">I'm </h2>
 				<h1 className="text-white bg-red md:w-2/3 md:text-8xl text-6xl">Melika Norouzbeygi</h1>
