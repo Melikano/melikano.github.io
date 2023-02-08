@@ -4,9 +4,9 @@ import mydata from "../data/me.json";
 
 export default function Skills() {
 	return (
-		<AnimatedDiv className={"mx-auto w-11/12"}>
+		<AnimatedDiv className={"md:mx-auto md:w-11/12 md:px-0 px-4"}>
 			<>
-				<h1 className="text-black inline p-2">Skills:</h1>
+				<h1 className="text-black inline">Skills:</h1>
 				<div className="grid md:grid-cols-3 grid-rows-2 gap-4 mt-8">
 					{mydata.skills.map(({ title, strength }, i) => (
 						<div className="mb-4" key={i}>

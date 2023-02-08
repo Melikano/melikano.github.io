@@ -3,9 +3,9 @@ import mydata from "../data/me.json";
 
 export default function WorkExperience() {
 	return (
-		<AnimatedDiv className="mx-auto w-11/12">
+		<AnimatedDiv className="md:mx-auto md:w-11/12 md:p-0 px-4">
 			<>
-				<h1 className="text-white p-2 inline">WorkExperience:</h1>
+				<h1 className="text-white inline">WorkExperience:</h1>
 				<div className="grid md:grid-cols-2 grid-rows-2 gap-4 mt-8">
 					{mydata.work_experience.map(
 						({ position, company_name, company_website, description }, i) => (

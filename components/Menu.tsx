@@ -45,7 +45,7 @@ const Menu: FC<MenuProps> = ({ sections, currentSection }) => {
 						}`}
 					>
 						{index !== current ? (
-							<p className="md:rotate-90 text-3xl whitespace-nowrap font-bold">
+							<p className="md:m-0 ml-4 md:rotate-90 text-3xl whitespace-nowrap font-bold">
 								{title}
 							</p>
 						) : null}
