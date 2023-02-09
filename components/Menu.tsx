@@ -16,16 +16,19 @@ const Menu: FC<MenuProps> = ({ sections, currentSection }) => {
 			{sections.map(({ index, title, backgroundColor, path }) => (
 				<nav
 					key={path}
-					className={`text-white transition-all delay-200 duration-700 ${
+					className={`text-white duration-700 delay-300 ${
 						index === current || !isDesktop ? "w-full" : "w-20"
 					}
 					${index === current ? "cursor-default" : ""}
 					`}
 					style={{
 						backgroundColor,
+						transition: "height 0.6s linear 0.3s, width 0.6s linear 0.3s, top 0.6s linear 0.3s, bottom 0.6s linear 0.3s",
 						position: isDesktop || index === current ? "static" : "fixed",
-						bottom: index > currentSection ? 3.5 * (3 - index) + "rem" : "auto",
-						top: index < currentSection ? 3.5 * index + "rem" : "auto",
+						top:
+							index <= currentSection
+								? 3.5 * index + "rem"
+								: `calc(100vh - ${3.5 * (4 - index)}rem)`,
 						height: isDesktop
 							? "100vh"
 							: index === current
