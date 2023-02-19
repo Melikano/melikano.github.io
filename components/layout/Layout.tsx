@@ -11,7 +11,7 @@ type LayoutProps = { children: ReactElement };
 
 const Layout: FC<LayoutProps> = ({ children }) => {
 	const { asPath } = useRouter();
-	const { isDesktop } = useGetCurrentBreakpoint();
+	const { isDesktop, windowDimensions } = useGetCurrentBreakpoint();
 	const currentSectionIndex = (
 		menuSections.find(({ path }) => path === asPath) || menuSections[0]
 	).index;
@@ -37,8 +37,9 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 
 				{!menuVisible || isDesktop ? (
 					<div
-						className="absolute pb-24 max-h-screen"
+						className="absolute pb-4"
 						style={{
+							maxHeight: windowDimensions.h - 80,
 							width: isDesktop
 								? `calc(100% - ${numberOfSections * 5}rem)`
 								: "100%",

@@ -17,7 +17,7 @@ const Menu: FC<MenuProps> = ({
 	setMenuVisible,
 }) => {
 	const [current, setCurrent] = useState(currentSection);
-	const { isDesktop } = useGetCurrentBreakpoint();
+	const { isDesktop, windowDimensions } = useGetCurrentBreakpoint();
 
 	return (
 		<>
@@ -37,7 +37,8 @@ const Menu: FC<MenuProps> = ({
 				""
 			)}
 			<div
-				className={`md:flex-row flex flex-col cursor-pointer w-full h-screen overflow-hidden`}
+				className={`md:flex-row flex flex-col cursor-pointer w-full overflow-hidden`}
+				style={{ height: windowDimensions.h }}
 			>
 				{sections.map(({ index, title, backgroundColor, path }) => (
 					<nav
