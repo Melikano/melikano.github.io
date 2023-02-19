@@ -25,13 +25,13 @@ const Menu: FC<MenuProps> = ({ sections, currentSection }) => {
 						backgroundColor,
 						transition: isDesktop
 							? "width 0.5s linear 0.3s"
-							: "height 0.6s linear 0.3s, top 0.6s linear 0.3s",
+							: "height 0.6s linear 0.3s, bottom 0.6s linear 0.3s",
 
 						position: isDesktop ? "static" : "fixed",
-						top:
-							index <= currentSection
-								? 3.5 * index + "rem"
-								: `calc(100vh - ${3.5 * (4 - index)}rem)`,
+						bottom:
+							index >= currentSection
+								? 3.5 * (3 - index) + "rem"
+								: `calc(100vh - ${3.5 * (index + 1)}rem)`,
 						height: isDesktop
 							? "100vh"
 							: index == currentSection
