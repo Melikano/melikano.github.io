@@ -9,9 +9,10 @@ const getBreakpointValue = (value) =>
 
 const useGetCurrentBreakpoint = () => {
 	const [currentBp, setCurrentBp] = useState("md");
+	const [windowDimensions, setWindowDimensions] = useState({ w: 0, h: 0 });
 
 	useEffect(() => {
-		const updateBp = () =>
+		const updateBp = () => {
 			setCurrentBp(
 				Object.entries(fullConfig.theme?.screens || {}).reduce(
 					([accBp, accBpVal], [bp, bpVal]) => {
@@ -24,12 +25,15 @@ const useGetCurrentBreakpoint = () => {
 					["xxs", "0px"]
 				)[0]
 			);
+			setWindowDimensions({ w: window.innerWidth, h: window.innerHeight });
+		};
 		updateBp();
 		window.addEventListener("resize", updateBp);
 		return () => window.removeEventListener("resize", updateBp);
 	}, []);
 
 	return {
+		windowDimensions,
 		currentBp,
 		isDesktop: ["md", "lg", "xl", "2xl"].includes(currentBp),
 	};
