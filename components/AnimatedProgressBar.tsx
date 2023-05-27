@@ -4,19 +4,17 @@ import useGetCurrentBreakpoint from "../helpers/useGetCurrentBreakpoint";
 type AnimatedProgressBarProps = { percent: number };
 
 const AnimatedProgressBar: FC<AnimatedProgressBarProps> = ({ percent }) => {
-	const [width, setWidth] = useState(0);
+	const [width, setWidth] = useState("");
 
 	const { isDesktop } = useGetCurrentBreakpoint();
 	useEffect(() => {
-		setWidth(normalize(percent));
+		setWidth(`${percent}%`);
 	}, []);
 
-	const normalize = (percent: number) => percent * (isDesktop ? 4 : 3.7);
-
 	return (
-		<div className="bg-white h-4" style={{ width: isDesktop ? 400 : "100%" }}>
+		<div className="bg-white h-4" style={{ width: isDesktop ? "calc(100% - 15rem)/3" : "100%" }}>
 			<div
-				className="bg-black transition-all duration-1000 delay-1000 h-4"
+				className="bg-black relative transition-all duration-1000 delay-1000 h-4"
 				style={{ width }}
 			></div>
 		</div>

@@ -45,7 +45,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 								: "100%",
 							overflow: isDesktop ? "hidden" : "scroll",
 							top: isDesktop ? "3rem" : "5rem",
-							left: isDesktop ? `${3 + currentSectionIndex * 3}rem` : 0,
+							left: isDesktop ? `${3 + currentSectionIndex * 5}rem` : 0,
 							display: menuVisible ? "none" : "block",
 						}}
 					>
