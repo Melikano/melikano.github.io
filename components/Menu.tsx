@@ -24,12 +24,12 @@ const Menu: FC<MenuProps> = ({
 			{!isDesktop ? (
 				!menuVisible ? (
 					<FiMenu
-						className="absolute h-20 w-20 right-3 z-40"
+						className="absolute h-16 w-16 right-3 z-40"
 						onClick={() => setMenuVisible(true)}
 					/>
 				) : (
 					<FiX
-						className="absolute h-20 w-20 right-3 z-40"
+						className="absolute h-16 w-16 right-3 z-40"
 						onClick={() => setMenuVisible(false)}
 					/>
 				)
