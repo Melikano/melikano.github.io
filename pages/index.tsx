@@ -40,7 +40,7 @@ export default function AboutMe() {
                 <a target={"_blank"} rel="noreferrer" href={href}>
                   <Icon
                     stroke={color}
-                    size="2.5rem"
+                    size="2.8rem"
                     className="md:mx-0 mx-4 hover:scale-150 transition-all duration-300"
                   />
                 </a>

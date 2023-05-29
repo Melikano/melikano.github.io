@@ -9,7 +9,7 @@ export default function Home() {
 
         {mydata.education.map(({ start_date, end_date, title, school }, i) => (
           <div
-            className="bg-black mt-8 w-1/2 p-8 h-64 flex flex-col justify-between"
+            className="bg-black mt-8 w-1/2 p-8 h-48 flex flex-col justify-between"
             key={i}
           >
             <h2 className="text-xl text-white inline">
