@@ -37,7 +37,7 @@ export default function AboutMe() {
           <ul className="md:ml-8 w-1/2 md:mt-0 mt-8 flex md:flex-col md:justify-between">
             {social.map(({ Icon, color, href }, i) => (
               <li key={i}>
-                <a target={"_blank"} rel="noreferrer" href={href}>
+                <a target={"_blank"} rel="noreferrer" href={href} className="inline-block">
                   <Icon
                     stroke={color}
                     size="2.8rem"
@@ -58,8 +58,7 @@ export default function AboutMe() {
             />
           </div>
           <div className="md:ml-8 md:mt-0 mt-4 md:w-1/2">
-            <p className="pt-2 text-2xl md:text-justify text-white">
-              {mydata.summary}
+            <p className="pt-2 text-2xl text-white" dangerouslySetInnerHTML={{__html: mydata.summary}}>
             </p>
           </div>
         </div>
