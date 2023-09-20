@@ -1,23 +1,17 @@
 {
-  "summary": "Highly motivated and self-driven frontend developer with a strong background in software engineering. Interested in learning new technologies and solving problems. Currently pursuing a Masters degree in Computer Science at the University of Calgary focusing on the semantics of functional programming languages and category theory.",
+  "summary": "Hey there! Want to get to know me a little better? Check out my passions: <br /> - Rocking the world of Programming 👩🏻‍💻 <br /> - Navigating the thrilling world of Mathematics 🧮 <br /> - Unleashing my superpower: Problem-solving 💡 <br /> - Embarking on epic adventures in Learning new things 📚 <br /> - Journeying into uncharted territories with new technologies/languages, unveiling their strengths and quirks 🌐 <br /> - Crafting cool tools and automating tasks like a tech wizard 🛠️ <br /> - Channeling my creative side into Illustration and Graphic Design 🎨 <br /> Buckle up, it's going to be a wild ride! 🚀",
   "work_experience": [
     {
       "position": "Senior Frontend Developer",
       "company_name": "Rahnema College",
       "company_website": "www.rahnemacollege.com",
       "description": [
-        "Developing company’s website from scratch",
-        "Builiding an UI-Library to be used on website, blog, and learning management system (LMS)",
-        "Conducting code reviews",
-        "Mentoring junior developers"
-      ]
-    },
-    {
-      "position": "Frontend Developer",
-      "company_name": "Rahnema College",
-      "company_website": "www.rahnemacollege.com",
-      "description": [
-        "Developing features for website, administration panel, and learning management system (LMS)"
+        "Built the company's website from the ground up, resulting in improved performance and enhanced SEO.",
+        "Enhanced codebase maintainability by fostering code reuse through the creation of a versatile UI library, which is now used by the company's website, blog, and learning management system (LMS).",
+        "Enhanced codebase quality by conducting code reviews.",
+        "Simplifying front-end project deployments through Dockerization.",
+        "Contributed to tech team management by providing mentorship to junior developers.",
+        "Skills: Typescript, React.js, Next.js, Docker, TailwindCss, Styled Components, Git"
       ]
     },
     {
@@ -25,29 +19,34 @@
       "company_name": "Yektanet",
       "company_website": "www.yektanet.en",
       "description": [
-        "Developing publisher and advertiser panels",
-        "Contributing to the development of Yektanet's design system library (Yekta UI)"
+        "Enhancing the experience for advertisers and ad publishers by collaboratively developing their panels through close communication with the product team.",
+        "Elevated code reusability by actively participating in the development of Yektanet's design system library (Yekta UI).",
+        "Skills: Javascript, Vue.js, Nuxt.js, Bootstrap, Git"
       ]
     },
     {
       "position": "Frontend Developer",
       "company_name": "Sanjagh",
       "company_website": "www.sanjagh.pro",
-      "description": ["Developing company’s website and mobile applications"]
+      "description": [
+        "Boosted the website's Lighthouse score by actively contributing to tasks like server-side rendering of various pages and implementing responsive image rendering.",
+        "Skills: Javascript, Flow.js, ReasonML, React.js, React-Native, Scala, Functional Programming, Git"
+      ]
     },
     {
       "position": "Software Developer Intern",
       "company_name": "Rahnema College",
       "company_website": "www.rahnemacollege.com",
       "description": [
-        "Focusing on Full-Stack Mobile Application Development, Software Architecture and DevOps"
+        "Exploring diverse aspects of software development, including full-stack mobile application development, software architecture, and DevOps.",
+        "Skills: Java, Javascript, Docker, Git, React-Native"
       ]
     }
   ],
   "education": [
     {
       "start_date": "2022",
-      "end_date": "Present",
+      "end_date": "2024",
       "title": "Master of Science in Computer Science",
       "schoolTitle": "University of Calgary",
       "schoolRef": "https://ucalgary.ca"
