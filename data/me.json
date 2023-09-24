@@ -16,6 +16,15 @@
     },
     {
       "position": "Frontend Developer",
+      "company_name": "Rahnema College",
+      "company_website": "www.rahnemacollege.com",
+      "description": [
+        "Improving the student experience through collaborative development of an LMS (Learning Management System) and website, achieved through continuous communication with the product team",
+        "Skills: Javascript, Vue.js, Nuxt.js, Bootstrap, Git"
+      ]
+    },
+    {
+      "position": "Frontend Developer",
       "company_name": "Yektanet",
       "company_website": "www.yektanet.en",
       "description": [
@@ -67,11 +76,12 @@
     { "title": "React-Native", "strength": "75" },
     { "title": "Haskell", "strength": "70" },
     { "title": "Java", "strength": "70" },
-    { "title": "ReScript", "strength": "50" },
     { "title": "SQL", "strength": "90" },
     { "title": "C/C++", "strength": "70" },
     { "title": "Docker", "strength": "60" },
     { "title": "Git", "strength": "90" },
-    { "title": "GraphQL", "strength": "50" }
+    { "title": "GraphQL", "strength": "70" },
+    { "title": "ReScript", "strength": "30" },
+    { "title": "Scala", "strength": "30" }
   ]
 }

@@ -52,5 +52,13 @@
 	body {
 		font-family: "Josefin Sans", cursive;
 		font-weight: 300;
+		.unorganized-grid {
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(auto-fill, 300px);
+			grid-auto-rows: minmax(20px, auto);
+			justify-content: center;	
+
+		}
 	}
 }
